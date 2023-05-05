@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="10.3.2">
+<ModelTarget name="VolcanoModelWithPlate_Copy" targetId="cbf7c207cf374ab0b6b3fbaa7181fe98" version="14.0" toolVersion="10.3.2" bbox="-0.100117 -0.100107 -0.000107 0.100107 0.120107 0.076844" previewImage="cbf7c207cf374ab0b6b3fbaa7181fe98_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="VolcanoModelWithPlate_Copys_assembly" assemblyId="92f35ac2d1b142cb94017036058e8948">
+<Part name="VolcanoModelWithPlate_Copy" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-0.00739562 0.035462 0.400394" rotation="AD: 0.6198933604186453 1.4014390058857729 -1.085184586366559 151.321" image="VolcanoModelWithPlate_Copy_viewpoint_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
