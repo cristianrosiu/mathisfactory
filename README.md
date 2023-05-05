@@ -1,69 +1,38 @@
-# Generate an SSH key pair
-If you do not have an existing SSH key pair, generate a new one.
+# Mathisfactory: An Augmented Reality Game for Reinforcing Mathematical Intuition in Earth Sciences
 
-1. Open a terminal
-2. Type `ssh-keygen -t ed25519 -C "your email here"`
-3. Press enter to all the following prompts (i.e. leave them empty)
+## Table of Contents
+1. [Overview](#overview)
+2. [Gameplay](#gameplay)
+   - [Planning Phase](#planning-phase)
+   - [Simulation Phase](#simulation-phase)
+3. [Evaluation](#evaluation)
+   - [Limitations](#limitations)
+   - [Future Work](#future-work)
 
-After the key was generated go to `C:\Users\USER\.ssh`, open `id_ed25519.pub` file and copy the content into `GitLab`.
+## Overview
 
-Finally, you can pull the code using the default git command: 
-```bash
-git pull git@gitlab.ewi.tudelft.nl:IN4302TU/2021-2022/bsg-03.git
-```
+Mathisfactory is an Augmented Reality (AR) serious game designed to enhance students' understanding of abstract mathematical concepts such as level curves and directional derivatives. By utilizing AR technology, the game provides an interactive and immersive learning experience for students, bridging the gap between theoretical knowledge and real-world application. The game is set in a geological context, with players analyzing and predicting lava flow in a volcanic situation using their understanding of level curves and directional derivatives.
 
-# Unity Version
-The unity version we are using is `Unity 2020.3.22f1 (LTS)`.
+## Gameplay
 
-The best way to install and manage Unity is through the **Unity Hub**:
+Mathisfactory is centered around a physical volcano model, with AR mechanics overlaying mathematical concepts on the model. The game consists of five levels of increasing difficulty, with each level requiring players to place research-oriented buildings on the volcano's surface in the safest locations possible. The game is divided into two phases: the Planning phase and the Simulation phase.
 
-1. Install [Unity Hub](https://unity3d.com/get-unity/download)
-2. Select the **Installs** tab and choose **Add**
-3. Select `Unity 2020.3.22f1 (LTS)` and click Next
-4. Check the following components under `Platforms`:
-   - Universal Windows Platform Build Support
-   - Windows Build Support (IL2CPP)
-  
-![unity-components](images/unity_install_option_uwp.png)
+### Planning Phase
 
-# Hololense Emulator
-Microsoft recommends using their [emulator](https://go.microsoft.com/fwlink/?linkid=2179936) in case no headset is present when testing. The emulator lets you run applications on a HoloLens virtual machine image without a physical HoloLens.
+During the Planning phase, players use AR tools to analyze the terrain, visualize level curves, and probe possible locations for their directional derivatives. The goal is to determine the safest locations for placing buildings on the volcano surface. The player can explore any potential building location on the volcano surface without any time constraints.
 
+### Simulation Phase
 
+In the Simulation phase, an AR-based lava flow simulation is displayed over the physical volcano model. The lava flow interacts with the placed buildings, and players receive feedback on the success of their predictions. Players can rewind and pause the lava flow simulation to analyze their predictions and investigate any discrepancies. The final score is determined by the number of buildings affected by the lava flow and the height at which they were placed.
 
-# Unity and GitLab
-In order to make sure that Unity works with a version control platform like GitLab we need to execute the following steps:
+## Evaluation
 
-1. Inside Unity, go to `Edit` &#8594; `Project Settings`
-2. Open the `Version Control` tab on the left an make sure that the `Mode` is set to **Visible Meta Files**
-3. Lastly, go to the `Editor` tab on the left and then to the `Asset Serialization` section. Make sure that the `Mode` is set to **Force Text**
+Mathisfactory was evaluated through multiple play sessions with 12 freshman college students. After playing the game, students filled out a survey to provide feedback on their experience and the extent to which AR enhanced their understanding of the mathematical concepts. The majority of students found the game helpful in understanding level curves and their relation to a 3D volume, and reported the interactivity to be engaging and helpful.
 
-# Setting up XR configuration
-## Setting up the build target
-Because this app is developed for `Hololense 2` the following build settings should be present:
+### Limitations
 
-1. Select `File` &#8594; `Build Settings...`
-2. Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
-3. Set Architecture to **ARM64**
-4. Set **Target device** to **HoloLens**
-5. Set **Build Type** to **D3D Project**
-6. Set **Target SDK Version** to **Latest installed**
+The current evaluation has limitations, such as a limited playtesting sample size and focusing exclusively on freshman students of the Earth Sciences faculty. Additionally, technical limitations of the Microsoft HoloLens 2 used for the AR interactions affect the overall experience. As the technology behind the HoloLens develops, we expect a better experience for players of Mathisfactory.
 
-![build-settings](images/wmr-config-img-4.png)
+### Future Work
 
-## Configuring XR Plugin Management for OpenXR
-
-To set OpenXR as the the runtime in Unity:
-
-1. In the Unity Editor, navigate to `Edit` &#8594; `Project Settings`
-2. In the list of Settings, select **XR Plugin Management** (should already be installed if you installed the Mixed Reality OpenXR plugin using MRFT)
-3. Check the **Initialize XR on Startup** box
-4. If targeting Desktop VR, stay on the PC Standalone tab (the monitor) and check the **OpenXR** and **Windows Mixed Reality feature set** boxes
-5. Switch to the Universal Windows Platform tab (the Windows logo) and select the **OpenXR** and **Microsoft HoloLens feature set** boxes
-   
-![xr-config](images/openxr-img-05.png)
-
-If you see a yellow warning icon next to **OpenXR Plugin**, click the icon and select **Fix All** before continuing. The Unity Editor may need to restart itself for the changes to take effect.
-
-## Optimization
-Select the `Mixed Reality` &#8594; `Project` &#8594; `Apply recommended project settings for HoloLens 2` menu item to get better app performance.
+Possible future work includes conducting a broader evaluation effort to better identify the specific topics the game is applicable to and the age group that benefits the most from the AR-based mechanics. Furthermore, improvements to the AR interactions, such as better visualization of directional derivatives and more intuitive game menus, can be explored as the technology behind the HoloLens develops.
