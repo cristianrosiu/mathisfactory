@@ -1,19 +1,33 @@
 # Mathisfactory: An Augmented Reality Game for Reinforcing Mathematical Intuition in Earth Sciences
 
+<p align="center">
+   
+   <img src="./images/lc2.jpeg" width="410" />
+   <img src="./images/lava-1.png" width="380" /> 
+   <img src="./images/level-curves-overlay.png" width="400" />
+   
+</p>
+
 ## Table of Contents
-1. [Overview](#overview)
-2. [Gameplay](#gameplay)
-   - [Planning Phase](#planning-phase)
-   - [Simulation Phase](#simulation-phase)
-3. [Evaluation](#evaluation)
-   - [Limitations](#limitations)
-   - [Future Work](#future-work)
+- [Mathisfactory: An Augmented Reality Game for Reinforcing Mathematical Intuition in Earth Sciences](#mathisfactory-an-augmented-reality-game-for-reinforcing-mathematical-intuition-in-earth-sciences)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Gameplay](#gameplay)
+    - [Planning Phase](#planning-phase)
+    - [Simulation Phase](#simulation-phase)
+  - [Evaluation](#evaluation)
+    - [Limitations](#limitations)
+    - [Future Work](#future-work)
 
 ## Overview
 
 Mathisfactory is an Augmented Reality (AR) serious game designed to enhance students' understanding of abstract mathematical concepts such as level curves and directional derivatives. By utilizing AR technology, the game provides an interactive and immersive learning experience for students, bridging the gap between theoretical knowledge and real-world application. The game is set in a geological context, with players analyzing and predicting lava flow in a volcanic situation using their understanding of level curves and directional derivatives.
 
 ## Gameplay
+
+<p align="center">
+  <img src="./images/loop.png" />
+</p>
 
 Mathisfactory is centered around a physical volcano model, with AR mechanics overlaying mathematical concepts on the model. The game consists of five levels of increasing difficulty, with each level requiring players to place research-oriented buildings on the volcano's surface in the safest locations possible. The game is divided into two phases: the Planning phase and the Simulation phase.
 
