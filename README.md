@@ -2,10 +2,10 @@
 
 <p align="center">
    
-   <img src="./images/lc2.jpeg" width="410" />
-   <img src="./images/lava-1.png" width="380" /> 
-   <img src="./images/level-curves-overlay.png" width="400" />
-   
+   <img src="./images/lc2.jpeg" width="345" />
+   <img src="./images/lava-1.png" width="320" /> 
+   <img src="./images/level-curves-overlay.png" width="330" />
+
 </p>
 
 ## Table of Contents
